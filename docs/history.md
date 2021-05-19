@@ -16,8 +16,12 @@
 ----------------------------------------------------
 
 <a name="v001"></a>
-[![P]][M] **Версия 0.0.1 (предварительная)**
+[![S]][M] **Версия 0.0.1 (предварительная)**
 --------------------------------------------
+[![R]][R0001] [![2021y-05m-19d 23:00:00]][R0001]  
+
+[2021y-05m-19d 23:00:00]: https://img.shields.io/static/v1?label=2021y-05m-19d&message=23:00:00&color=yellowgreen
+[R0001]: changelog.md/#v001
 
 |      дата     |  время   |    ветка    | статус |  
 |:-------------:|:--------:|:-----------:|:------:|  
@@ -30,12 +34,12 @@
 3) add: [build_info v003]  
      - date: [2021y-07m-02d 14:00:00][build_info v003]  
 
-4) add: `tools/features.hpp`     001 PRE  
-5) add: `tools/features.ver`     001 PRE  
+4) add: `tools/features.hpp`     001  
+5) add: `tools/features.ver`     001  
 
 6) add: `test`:  
-     - add: `test-classic.cpp`   001 PRE  
-     - add: `test-modern.cpp`    001 PRE  
+     - add: `test-classic.cpp`   001  
+     - add: `test-modern.cpp`    001  
 
 [build_info v003]: https://github.com/Kartonagnick/build_info/blob/master/docs/history.md#v003
 [#3-deploy]: tasks/2021y-05m-19d-0003-deploy.md

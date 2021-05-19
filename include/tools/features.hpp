@@ -1,7 +1,7 @@
-// [2020y-05m-19d][00:00:00] Idrisov Denis R. 001 PRE
+// [2020y-05m-19d][23:00:00] Idrisov Denis R. 001
 #pragma once
 #ifndef dTOOLS_FEATURES_USED_
-#define dTOOLS_FEATURES_USED_ 1 PRE
+#define dTOOLS_FEATURES_USED_ 1
 
 //==============================================================================
 //=== dHAS_RVALUE_REFERENCES/dHAS_ATOMIC =======================================
