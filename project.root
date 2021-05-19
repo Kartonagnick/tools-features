@@ -1,0 +1,14 @@
+# [2021y-05m-18d][22:27:01] Idrisov Denis R.  
+# [2021y-05m-18d][22:27:01] birthday of the project  
+
+# --- поддерживаемые конфигурации
+INCLUDE_CONFIGURATIONS =
+
+# --- игнорируемые конфигурации
+EXCLUDE_CONFIGURATIONS =
+
+# --- версия продукта
+VERSION = include\tools\features.ver
+
+
+
