@@ -1,0 +1,14 @@
+// [2020y-05m-19d][00:00:00] Idrisov Denis R. 001 PRE
+//==============================================================================
+//==============================================================================
+#pragma once
+#ifndef dTOOLS_FEATURES_VERSION_USED_ 
+#define dTOOLS_FEATURES_VERSION_USED_ 1 PRE
+
+#define dTOOLS_FEATURES_MAJOR 0
+#define dTOOLS_FEATURES_MINOR 0
+#define dTOOLS_FEATURES_PATCH 1
+
+//==============================================================================
+//==============================================================================
+#endif // !dTOOLS_FEATURES_VERSION_USED_
