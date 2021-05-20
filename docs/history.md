@@ -16,23 +16,31 @@
 ----------------------------------------------------
 
 <a name="v002"></a>
-[![P]][M] **Версия 0.0.2 (предварительная)**
+[![S]][M] **Версия 0.0.2 (предварительная)**
 --------------------------------------------
+[![R]][R0002] [![2021y-05m-21d 02:00:00]][R0002]  
+
+[2021y-05m-21d 02:00:00]: https://img.shields.io/static/v1?label=2021y-05m-21d&message=02:00:00&color=yellowgreen
+[R0002]: changelog.md/#v002
 
 |      дата     |  время   |    ветка    | статус |  
 |:-------------:|:--------:|:-----------:|:------:|  
 | 2020y-05m-21d | 01:15:00 |  [#5-test]  | DONE   |  
 | 2020y-05m-20d | 14:30:00 |  [#5-test]  | BEGIN  |  
 
-1) add: юнит-тесты:  
+1) upd: инкремент версии:  
+     - upd: `features.hpp` 002  
+     - upd: `features.ver` 002  
+
+2) add: юнит-тесты:  
      - add: `test/sources/features`:  
        - add: `test-atomic.cpp`        001  
        - add: `test-nocopyable.cpp`    001  
        - add: `test-noexcept.cpp`      001  
        - add: `test-static_check.cpp`  001  
 
-2) add: документация:
-     - add `docs/table.md` 002 PRE  
+3) add: документация:
+     - add `docs/table.md` 002  
 
 [#5-test]: tasks/2021y-05m-20d-0005-test.md
 

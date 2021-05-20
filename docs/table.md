@@ -10,7 +10,7 @@
 [N]: icons/na.png        "функциональность не доступна"
 
 <a name="main"></a>
-[![P]][M] features v0.0.2 
+[![S]][M] features v0.0.2 
 =========================
 
 | **ID** |     элементы               |   mingw    |   mingw    |    mingw   |    mingw    |   mingw     |    msvc    |    msvc    |  
@@ -40,7 +40,7 @@
 
 dHAS_ATOMIC
 -----------
-Если определен, значит компилятору доступны стандартные заголовоки:  
+Если определен, значит компилятору доступны стандартные заголовки:  
 ```
     #include <atomic>
     #include <future>
@@ -153,6 +153,21 @@ dNOEXCEPT
     // указываем, что функция не кидает исключения
     void foo() noexcpet {}
 ```
+
+История изменений
+-----------------
+
+ver-0.0.2 [![2021y-05m-21d 02:00:00]][R0002]  
+ver-0.0.1 [![2021y-05m-19d 23:00:00]][R0001]  
+ver-0.0.0 [![2021y-05m-18d 23:15:00]][R0000]  
+
+[2021y-05m-21d 02:00:00]: https://img.shields.io/static/v1?label=2021y-05m-21d&message=02:00:00&color=yellowgreen
+[2021y-05m-19d 23:00:00]: https://img.shields.io/static/v1?label=2021y-05m-19d&message=23:00:00&color=yellowgreen
+[2021y-05m-18d 23:15:00]: https://img.shields.io/static/v1?label=2021y-05m-18d&message=23:15:00&color=yellowgreen
+
+[R0002]: history.md/#v002
+[R0001]: history.md/#v001
+[R0000]: history.md/#v000
 
 --------------------------------------------
 
