@@ -19,7 +19,7 @@
   - Добавлена базовая комплектация `features.hpp` 0.0.1  
     - `dHAS_ATOMIC`  
     - `dSTATIC_CHECK`  
-    - `dHAS_DELETING_FUNCTIONS`  
+    - `dCAN_DELETE_FUNCTION`  
     - `dNOCOPYABLE`  
     - `dHAS_NOEXCEPT`  
     - `dNOEXCEPT`  
