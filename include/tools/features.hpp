@@ -1,10 +1,11 @@
+// [2020y-05m-20d][14:30:00] Idrisov Denis R. 002 PRE
 // [2020y-05m-19d][23:00:00] Idrisov Denis R. 001
 #pragma once
 #ifndef dTOOLS_FEATURES_USED_
-#define dTOOLS_FEATURES_USED_ 1
+#define dTOOLS_FEATURES_USED_ 2
 
 //==============================================================================
-//=== dHAS_RVALUE_REFERENCES/dHAS_ATOMIC =======================================
+//=== dHAS_ATOMIC ==============================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1700
     // msvc2012 (or newer)
@@ -28,14 +29,14 @@
 #endif
 
 //==============================================================================
-//=== dHAS_DELETING_FUNCTIONS ==================================================
+//=== dCAN_DELETE_FUNCTION =====================================================
 
 #if (defined(_MSC_VER) && _MSC_VER >= 1800) || __cplusplus >= 201103L
     // msvc2013 (or newer) or c++11 (or newer)
-    #define dHAS_DELETING_FUNCTIONS 1
+    #define dCAN_DELETE_FUNCTION 1
 #endif
 
-#ifdef dHAS_DELETING_FUNCTIONS
+#ifdef dCAN_DELETE_FUNCTION
     #define dNOCOPYABLE(Class)                   \
         Class(const Class&)            = delete; \
         Class(Class&&)                 = delete; \
@@ -56,7 +57,7 @@
     #endif
 #endif
 
-#ifdef__GXX_EXPERIMENTAL_CXX0X__
+#ifdef __GXX_EXPERIMENTAL_CXX0X__
     #if __GNUC__ * 10 + __GNUC_MINOR__ >= 46
         #define dHAS_NOEXCEPT 1
     #endif
