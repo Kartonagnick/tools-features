@@ -1,4 +1,4 @@
-[![logo](logo.png)](../home.md "for developers") 
+[![logo](logo.png)](home.md "for developers") 
 
 [R]: icons/release.png   "релизная версия"
 [P]: icons/progress.png  "в процессе..."
@@ -10,7 +10,7 @@
 [N]: icons/na.png        "функциональность не доступна"
 
 <a name="main"></a>
-[![S]][M] features v0.0.2 
+[![P]][M] features v0.0.3 
 =========================
 
 | **ID** |     элементы               |   mingw    |   mingw    |    mingw   |    mingw    |   mingw     |    msvc    |    msvc    |  
@@ -18,11 +18,20 @@
 |        |                            |   810 730  |  640 630   |   540 530  | 494 493 492 | 485 484 483 | 2019 2017  |  2013 2012 |  
 |        |                            |   720 710  |  620 610   |   520 510  |   491 490   |   482 481   |   2015     |  2010 2008 |  
 |  0000  | [dHAS_ATOMIC][00]          | [![S]][00] | [![S]][00] | [![S]][00] | [![S]][00]  | [![S]][00]  | [![S]][00] | [![S]][00] |  
-|  0001  | [dSTATIC_CHECK][01]        | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
-|  0002  | [dCAN_DELETE_FUNCTION][02] | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
-|  0003  | [dNOCOPYABLE][03]          | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
-|  0004  | [dHAS_NOEXCEPT][04]        | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
-|  0005  | [dNOEXCEPT][05]            | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
+|  0001  | [dHAS_STATIC_ASSERT][01]   | [![S]][01] | [![S]][01] | [![S]][01] | [![S]][01]  | [![S]][01]  | [![S]][01] | [![S]][01] |  
+|  0002  | [dSTATIC_ASSERT][02]       | [![S]][02] | [![S]][02] | [![S]][02] | [![S]][02]  | [![S]][02]  | [![S]][02] | [![S]][02] |  
+|  0003  | [dSTATIC_CHECK][03]        | [![S]][03] | [![S]][03] | [![S]][03] | [![S]][03]  | [![S]][03]  | [![S]][03] | [![S]][03] |  
+|  0004  | [dCAN_DELETE_FUNCTION][04] | [![S]][04] | [![S]][04] | [![S]][04] | [![S]][04]  | [![S]][04]  | [![S]][04] | [![S]][04] |  
+|  0005  | [dNOCOPYABLE][05]          | [![S]][05] | [![S]][05] | [![S]][05] | [![S]][05]  | [![S]][05]  | [![S]][05] | [![S]][05] |  
+|  0006  | [dHAS_NOEXCEPT][06]        | [![S]][06] | [![S]][06] | [![S]][06] | [![S]][06]  | [![S]][06]  | [![S]][06] | [![S]][06] |  
+|  0007  | [dNOEXCEPT][07]            | [![S]][07] | [![S]][07] | [![S]][07] | [![S]][07]  | [![S]][07]  | [![S]][07] | [![S]][07] |  
+|  0008  | [dHAS_NULLPTR][08]         | [![S]][08] | [![S]][08] | [![S]][08] | [![S]][08]  | [![S]][08]  | [![S]][08] | [![S]][08] |  
+|  0009  | [dHAS_TYPE_TRAITS][09]     | [![S]][09] | [![S]][09] | [![S]][09] | [![S]][09]  | [![S]][09]  | [![S]][09] | [![S]][09] |  
+|  0010  | [dTRAIT][10]               | [![S]][10] | [![S]][10] | [![S]][10] | [![S]][10]  | [![S]][10]  | [![S]][10] | [![S]][10] |  
+|  0011  | [dHAS_DECLTYPE][11]        | [![S]][11] | [![S]][11] | [![S]][11] | [![S]][11]  | [![S]][11]  | [![S]][11] | [![S]][11] |  
+|  0012  | [dHAS_LAMBDA][12]          | [![S]][12] | [![S]][12] | [![S]][12] | [![S]][12]  | [![S]][12]  | [![S]][12] | [![S]][12] |  
+|  0013  | [dHAS_HASH][13]            | [![S]][13] | [![S]][13] | [![S]][13] | [![S]][13]  | [![S]][13]  | [![S]][13] | [![S]][13] |  
+|  0014  | [dHAS_CSTDINT][14]         | [![S]][14] | [![S]][14] | [![S]][14] | [![S]][14]  | [![S]][14]  | [![S]][14] | [![S]][14] |  
 
 <br/>
 
@@ -32,11 +41,20 @@
 [VS-OLD]: #main  "поддержка старых компиляторов msvc"
 
 [00]: #dHAS_ATOMIC
-[01]: #dSTATIC_CHECK
-[02]: #dCAN_DELETE_FUNCTION
-[03]: #dNOCOPYABLE
-[04]: #dHAS_NOEXCEPT
-[05]: #dNOEXCEPT
+[01]: #dHAS_STATIC_ASSERT
+[02]: #dSTATIC_ASSERT
+[03]: #dSTATIC_CHECK
+[04]: #dCAN_DELETE_FUNCTION
+[05]: #dNOCOPYABLE
+[06]: #dHAS_NOEXCEPT
+[07]: #dNOEXCEPT
+[08]: #dHAS_NULLPTR
+[09]: #dHAS_TYPE_TRAITS
+[10]: #dTRAIT
+[11]: #dHAS_DECLTYPE
+[12]: #dHAS_LAMBDA
+[13]: #dHAS_HASH
+[14]: #dHAS_CSTDINT
 
 dHAS_ATOMIC
 -----------
@@ -48,10 +66,48 @@ dHAS_ATOMIC
     #include <mutex>
 ```
 
-dSTATIC_CHECK
--------------
+dHAS_STATIC_ASSERT
+------------------
 [ST]: https://en.cppreference.com/w/cpp/language/static_assert
 
+Если компилятор поддерживает [static_assert][ST],  
+тогда макрос определен и равен 1  
+
+Пример:  
+
+```
+    enum { value = 1 };
+
+    #if dHAS_STATIC_ASSERT
+        static_assert(value, "'static_assert' not worked");
+    #endif
+
+```
+
+dSTATIC_ASSERT
+--------------
+Реализует `static_assert`  
+Определен всегда, и для всех компиляторов.  
+Для новых компиляторов используется стандартный [static_assert][ST]  
+Для старых компиляторов используется хитроумная самоделка.  
+Особенность самоделки: макрос можно использовать как внутри функций,  
+так и в глоабальной области.  
+
+```
+namespace
+{
+    enum { value = 1 };
+
+    dSTATIC_ASSERT(
+        STATIC_ASSERT_NOT_WORKED, 
+        value
+    );
+
+} // namespace
+```
+
+dSTATIC_CHECK
+-------------
 Реализует `static_assert`  
 Определен всегда, и для всех компиляторов.  
 Для новых компиляторов используется стандартный [static_assert][ST]  
@@ -153,6 +209,73 @@ dNOEXCEPT
     // указываем, что функция не кидает исключения
     void foo() noexcpet {}
 ```
+
+dHAS_NULLPTR
+------------
+[NIL]: https://en.cppreference.com/w/cpp/language/nullptr
+
+Если компилятор поддерживает [nullptr][NIL],  
+тогда макрос определен и равен 1  
+
+```
+#ifdef dHAS_NULLPTR
+    void bar(std::nullptr_t p)
+    {
+        void* a = p;
+        ASSERT_TRUE(p == 0);
+        ASSERT_TRUE(!a);
+    }
+
+    void foo()
+    {
+        bar(nullptr);
+    }
+
+#endif
+```
+
+dHAS_TYPE_TRAITS
+----------------
+[TR]: https://en.cppreference.com/w/cpp/header/type_traits
+
+Если компилятору доступен стандартный заголовок [`<type_traits>`][TR],  
+тогда макрос определен и равен 1  
+
+dTRAIT
+------
+Если компилятору доступен стандартный заголовок [`<type_traits>`][TR],  
+Тогда макрос раскрывается в значение `std`.  
+А иначе - раскрывается в значение `tools`.  
+
+dHAS_DECLTYPE
+-------------
+[DCL]: https://en.cppreference.com/w/cpp/language/decltype
+
+Если компилятору доступен спецификатор [decltype][DCL],  
+тогда макрос определен и равен 1  
+
+dHAS_LAMBDA
+-----------
+[LA]: https://en.cppreference.com/w/cpp/language/lambda
+
+Если компилятору доступны [лямбды][LA],  
+тогда макрос определен и равен 1  
+
+dHAS_HASH
+---------
+[HA]: https://en.cppreference.com/w/cpp/utility/hash
+
+Если компилятору доступен стандартный заголовок [`<hash>`][HA],  
+тогда макрос определен и равен 1  
+
+dHAS_CSTDINT
+------------
+[CSTDINT]: https://en.cppreference.com/w/cpp/header/cstdint
+
+Если компилятору доступен стандартный заголовок [`<cstdint>`][CSTDINT],  
+тогда макрос определен и равен 1  
+
+<br/>
 
 История изменений
 -----------------
