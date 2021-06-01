@@ -1,34 +1,39 @@
 // [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
-// [2020y-05m-21d][02:00:00] Idrisov Denis R. 002
-// [2021y-02m-28d][01:43:52] Idrisov Denis R.
+// [2021y-03m-03d][19:14:11] Idrisov Denis R.
 #include <mygtest/modern.hpp>
 //=================================================================================
 //=================================================================================
 
-#ifdef TEST_STATIC_CHECK
+#ifdef TEST_HASH
 
 #define dTEST_COMPONENT tools, features
-#define dTEST_METHOD test_STATIC_CHECK
+#define dTEST_METHOD test_HAS_HASH
 #define dTEST_TAG tdd
 
 #include <tools/features.hpp>
 
+#ifdef dHAS_HASH
+    dPRAGMA_MESSAGE("[test] enabled  -> dHAS_HASH")
+    #include <functional>
+#else
+    dPRAGMA_MESSAGE("[test] disabled -> dHAS_HASH")
+#endif
+
 //==============================================================================
 //==============================================================================
 
+#ifdef dHAS_HASH
 TEST_COMPONENT(000)
 {
-    enum { value = 1 };
-
-    dSTATIC_CHECK(
-        STATIC_ASSERT_NOT_WORKED,
-        value
-    );
+    const ::std::hash<int> h;
+    dprint(std::cout << "hash = " << h(100) << '\n');
+    (void)h;
 }
+#endif
 
 //==============================================================================
 //==============================================================================
-#endif // TEST_STATIC_CHECK
+#endif // TEST_HASH
 
 
 

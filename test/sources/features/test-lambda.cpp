@@ -1,34 +1,39 @@
 // [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
-// [2020y-05m-21d][02:00:00] Idrisov Denis R. 002
-// [2021y-02m-28d][01:43:52] Idrisov Denis R.
+// [2021y-03m-10d][13:28:40] Idrisov Denis R.
 #include <mygtest/modern.hpp>
 //=================================================================================
 //=================================================================================
 
-#ifdef TEST_STATIC_CHECK
+#ifdef TEST_LAMBDA
 
 #define dTEST_COMPONENT tools, features
-#define dTEST_METHOD test_STATIC_CHECK
+#define dTEST_METHOD test_HAS_LAMBDA
 #define dTEST_TAG tdd
 
 #include <tools/features.hpp>
 
-//==============================================================================
-//==============================================================================
+#ifdef dHAS_CSTDINT
+    dPRAGMA_MESSAGE("[test] enabled  -> dHAS_LAMBDA")
 
-TEST_COMPONENT(000)
-{
-    enum { value = 1 };
+    namespace
+    {
+        const auto lambda = []() { return true; };
 
-    dSTATIC_CHECK(
-        STATIC_ASSERT_NOT_WORKED,
-        value
-    );
-}
+    } // namespace
+
+    TEST_COMPONENT(000)
+    {
+        ASSERT_TRUE(lambda());
+    }
+
+#else
+    dPRAGMA_MESSAGE("[test] disabled -> dHAS_LAMBDA")
+#endif
+
 
 //==============================================================================
 //==============================================================================
-#endif // TEST_STATIC_CHECK
+#endif // TEST_LAMBDA
 
 
 

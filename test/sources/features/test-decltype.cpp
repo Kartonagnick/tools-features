@@ -1,34 +1,39 @@
 // [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
-// [2020y-05m-21d][02:00:00] Idrisov Denis R. 002
-// [2021y-02m-28d][01:43:52] Idrisov Denis R.
+// [2021y-03m-10d][13:28:40] Idrisov Denis R.
 #include <mygtest/modern.hpp>
 //=================================================================================
 //=================================================================================
 
-#ifdef TEST_STATIC_CHECK
+#ifdef TEST_DECLTYPE
 
 #define dTEST_COMPONENT tools, features
-#define dTEST_METHOD test_STATIC_CHECK
+#define dTEST_METHOD test_HAS_DECLTYPE
 #define dTEST_TAG tdd
 
 #include <tools/features.hpp>
 
-//==============================================================================
-//==============================================================================
+#ifdef dHAS_DECLTYPE
+    dPRAGMA_MESSAGE("[test] enabled  -> dHAS_DECLTYPE")
 
-TEST_COMPONENT(000)
-{
-    enum { value = 1 };
+    namespace
+    {
+        struct {} obj1;
+        decltype(obj1) obj2;
 
-    dSTATIC_CHECK(
-        STATIC_ASSERT_NOT_WORKED,
-        value
-    );
-}
+    } // namespace
+
+    void unit_test_decltype_123_123_444_234_5678()
+    {
+        (void) obj2;
+    }
+
+#else
+    dPRAGMA_MESSAGE("[test] disabled -> dHAS_DECLTYPE")
+#endif
 
 //==============================================================================
 //==============================================================================
-#endif // TEST_STATIC_CHECK
+#endif // TEST_DECLTYPE
 
 
 

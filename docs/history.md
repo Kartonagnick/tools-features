@@ -15,6 +15,49 @@
 
 ----------------------------------------------------
 
+<a name="v003"></a>
+[![P]][M] **Версия 0.0.3 (предварительная)**
+--------------------------------------------
+
+|      дата     |  время   |     ветка     | статус |  
+|:-------------:|:--------:|:-------------:|:------:|  
+| 2020y-06m-01d | 19:30:00 | [#7-msvc2010] | DONE   |  
+| 2020y-06m-01d | 11:15:00 | [#7-msvc2010] | BEGIN  |  
+
+1) upd: инкремент версии:  
+     - upd: `features.ver` 003 PRE  
+     - upd: `features.hpp` 003 PRE  
+       - `dHAS_NULLPTR`  
+       - `dHAS_TYPE_TRAITS`  
+       - `dHAS_DECLTYPE`  
+       - `dHAS_LAMBDA`  
+       - `dHAS_HASH`  
+       - `dHAS_CSTDINT`  
+       - `dHAS_STATIC_ASSERT`  
+       - `dSTATIC_ASSERT`  
+
+2) upd: юнит-тесты:  
+     - upd: `test/sources/features`:  
+       - upd: `test-nocopyable.cpp`     002 PRE  
+       - upd: `test-static_check.cpp`   002 PRE  
+
+3) add: юнит-тесты:  
+     - add: `test/sources/features`:  
+       - add: `test-cstdint.cpp`        001 PRE  
+       - add: `test-decltype.cpp`       001 PRE  
+       - add: `test-hash.cpp`           001 PRE  
+       - add: `test-lambda.cpp`         001 PRE  
+       - add: `test-nullptr.cpp`        001 PRE  
+       - add: `test-static_assert.cpp`  001 PRE  
+       - add: `test-type_traits.cpp`    001 PRE  
+
+3) add: документация:
+     - add `docs/table.md` 003 PRE  
+
+[#7-msvc2010]: tasks/2021y-06m-01d-0007-msvc2010.md
+
+--------------------------------------------
+
 <a name="v002"></a>
 [![S]][M] **Версия 0.0.2 (предварительная)**
 --------------------------------------------
@@ -29,8 +72,14 @@
 | 2020y-05m-20d | 14:30:00 |  [#5-test]  | BEGIN  |  
 
 1) upd: инкремент версии:  
-     - upd: `features.hpp` 002  
      - upd: `features.ver` 002  
+     - upd: `features.hpp` 002  
+       - add: `dHAS_ATOMIC`  
+       - add: `dSTATIC_CHECK`  
+       - add: `dHAS_DELETING_FUNCTIONS`  
+       - add: `dNOCOPYABLE`  
+       - add: `dHAS_NOEXCEPT`  
+       - add: `dNOEXCEPT`  
 
 2) add: юнит-тесты:  
      - add: `test/sources/features`:  
