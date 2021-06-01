@@ -1,4 +1,4 @@
-// [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
+// [2020y-06m-01d][20:00:00] Idrisov Denis R. 003
 // [2020y-05m-21d][02:00:00] Idrisov Denis R. 002
 // [2020y-05m-19d][23:00:00] Idrisov Denis R. 001
 #pragma once

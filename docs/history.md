@@ -16,8 +16,12 @@
 ----------------------------------------------------
 
 <a name="v003"></a>
-[![P]][M] **Версия 0.0.3 (предварительная)**
+[![S]][M] **Версия 0.0.3 (предварительная)**
 --------------------------------------------
+[![R]][R0003] [![2021y-06m-01d 20:00:00]][R0003]  
+
+[2021y-06m-01d 20:00:00]: https://img.shields.io/static/v1?label=2021y-06m-01d&message=20:00:00&color=yellowgreen
+[R0003]: changelog.md/#v003
 
 |      дата     |  время   |     ветка     | статус |  
 |:-------------:|:--------:|:-------------:|:------:|  
@@ -25,8 +29,8 @@
 | 2020y-06m-01d | 11:15:00 | [#7-msvc2010] | BEGIN  |  
 
 1) upd: инкремент версии:  
-     - upd: `features.ver` 003 PRE  
-     - upd: `features.hpp` 003 PRE  
+     - upd: `features.ver` 003  
+     - upd: `features.hpp` 003  
        - `dHAS_NULLPTR`  
        - `dHAS_TYPE_TRAITS`  
        - `dHAS_DECLTYPE`  
@@ -38,21 +42,21 @@
 
 2) upd: юнит-тесты:  
      - upd: `test/sources/features`:  
-       - upd: `test-nocopyable.cpp`     002 PRE  
-       - upd: `test-static_check.cpp`   002 PRE  
+       - upd: `test-nocopyable.cpp`     002  
+       - upd: `test-static_check.cpp`   002  
 
 3) add: юнит-тесты:  
      - add: `test/sources/features`:  
-       - add: `test-cstdint.cpp`        001 PRE  
-       - add: `test-decltype.cpp`       001 PRE  
-       - add: `test-hash.cpp`           001 PRE  
-       - add: `test-lambda.cpp`         001 PRE  
-       - add: `test-nullptr.cpp`        001 PRE  
-       - add: `test-static_assert.cpp`  001 PRE  
-       - add: `test-type_traits.cpp`    001 PRE  
+       - add: `test-cstdint.cpp`        001  
+       - add: `test-decltype.cpp`       001  
+       - add: `test-hash.cpp`           001  
+       - add: `test-lambda.cpp`         001  
+       - add: `test-nullptr.cpp`        001  
+       - add: `test-static_assert.cpp`  001  
+       - add: `test-type_traits.cpp`    001  
 
 3) add: документация:
-     - add `docs/table.md` 003 PRE  
+     - add `docs/table.md` 003  
 
 [#7-msvc2010]: tasks/2021y-06m-01d-0007-msvc2010.md
 

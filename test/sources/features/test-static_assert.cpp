@@ -1,4 +1,4 @@
-// [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
+// [2020y-06m-01d][20:00:00] Idrisov Denis R. 003
 // [2021y-02m-28d][01:43:52] Idrisov Denis R.
 // [2021y-04m-01d][00:12:28] Idrisov Denis R.
 #include <mygtest/modern.hpp>
