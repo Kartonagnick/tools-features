@@ -1,3 +1,4 @@
+// [2020y-06m-01d][11:15:00] Idrisov Denis R. 003 PRE
 // [2020y-05m-21d][02:00:00] Idrisov Denis R. 002
 // [2021y-02m-25d][04:21:08] Idrisov Denis R.
 #include <mygtest/modern.hpp>
@@ -28,7 +29,7 @@ namespace
         alone(){}
     };
 
-    #ifdef dHAS_DELETING_FUNCTIONS
+    #ifdef dCAN_DELETE_FUNCTION
     struct Class
     {
         Class(){}
@@ -37,15 +38,6 @@ namespace
         Class& operator=(const Class&) = delete;
         Class& operator=(Class&&)      = delete;
     };
-    #endif
-
-    #ifdef dHAS_TEMPLATE_FUNCTION_DEFAULT_PARAM
-    template<class T, size_t n = T::count>
-    void foo(T) {}
-    #endif
-
-    #ifdef dHAS_USING_ALIAS
-    template <class t> using sample = t;
     #endif
 
 } // namespace
